@@ -216,6 +216,7 @@
             mediaInfo.filename = data[@"filename"];
             mediaInfo.key = data[@"key"];
             mediaInfo.filesize = data[@"size"];
+            mediaInfo.filetype = data[@"mimetype"];
             mediaInfo.source = picker.source;
 
             dispatch_async(dispatch_get_main_queue(), ^{

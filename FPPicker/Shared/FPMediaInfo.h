@@ -18,6 +18,7 @@
 @property (nonatomic, strong) NSURL *remoteURL;
 @property (nonatomic, strong) NSString *filename;
 @property (nonatomic, strong) NSNumber *filesize;
+@property (nonatomic, strong) NSString *filetype;
 @property (nonatomic, strong) NSString *key;
 @property (nonatomic, strong) FPSource *source;
 @property (nonatomic, strong) ALAsset *originalAsset;

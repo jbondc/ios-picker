@@ -45,6 +45,7 @@
             self.remoteURL,
             self.filename,
             self.filesize,
+            self.filetype,
             self.key,
             self.source.identifier,
             self.originalAsset,
