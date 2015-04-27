@@ -1185,6 +1185,7 @@ static const CGFloat ROW_HEIGHT = 44.0;
     FPMediaInfo *mediaInfo = [FPMediaInfo new];
 
     mediaInfo.filename = obj[@"filename"];
+    mediaInfo.filetype = obj[@"mimetype"];
     mediaInfo.mediaType = [FPUtils UTIForMimetype:obj[@"mimetype"]];
     mediaInfo.filesize = obj[@"bytes"];
     mediaInfo.source = self.source;

@@ -281,6 +281,7 @@
 
         mediaInfo.remoteURL = [NSURL URLWithString:responseObject[@"url"]];
         mediaInfo.filename = responseObject[@"filename"];
+        mediaInfo.filetype = responseObject[@"mimetype"];
         mediaInfo.key = responseObject[@"key"];
         mediaInfo.source = source;
 
@@ -341,6 +342,7 @@
 
         mediaInfo.remoteURL = [NSURL URLWithString:headers[@"X-Data-Url"]];
         mediaInfo.filename = headers[@"X-File-Name"];
+        mediaInfo.filetype = mimetype;
         mediaInfo.mediaURL = tempURL;
         mediaInfo.mediaType = [FPUtils UTIForMimetype:mimetype];
         mediaInfo.source = source;
